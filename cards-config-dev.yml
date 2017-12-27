@@ -1,0 +1,2 @@
+cassandra:
+ profile: test
