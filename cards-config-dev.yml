@@ -1,2 +1,18 @@
+spring:
+  profiles: dev
+
+logging:
+  file: /apps/card-v1.log
+  config: classpath:logback-json.xml
+
 cassandra:
- profile: test
+  scripts:
+    appKeyspace:
+  connectionSettings:
+    contactPoints: 10.63.109.155
+    defaultKeyspace: gam_wallet_uat
+    port: 9042
+    userName: profile_cassandra_user
+    password: not_windows7
+    defaultReadConsistencyLevel: LOCAL_ONE
+    defaultWriteConsistencyLevel: LOCAL_ONE
